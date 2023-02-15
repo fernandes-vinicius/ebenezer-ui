@@ -10,6 +10,7 @@ export default {
       color: '$white',
       padding: '$4',
       borderRadius: '$lg',
+      boxShadow: '$2xl',
     },
     children: <Text>This is the Box</Text>,
   },

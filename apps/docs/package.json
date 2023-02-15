@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "build-storybook --output-dir dist",
-    "dev": "start-storybook -p 6006",
+    "dev": "start-storybook -p 6006 --no-open",
     "deploy-storybook": "storybook-to-ghpages",
     "lint": "TIMING=1 eslint \"src/**/*.ts*\"",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
