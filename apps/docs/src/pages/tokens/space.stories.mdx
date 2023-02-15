@@ -1,0 +1,19 @@
+import { Meta } from "@storybook/addon-docs";
+import { space } from "@ebenezer-ui/tokens";
+import { Title } from "../../components/Title";
+import { Description } from "../../components/Description";
+import { TokensGrid } from "../../components/TokensGrid";
+
+<Meta title="Tokens/Space" />
+
+<Title>Space</Title>
+
+<Description>
+  By default, Ebenezer UI includes a generous and comprehensive numeric spacing
+  scale. The values are proportional, so <code>16</code> is twice as much
+  spacing as <code>8</code> for example. One spacing unit is equal to{" "}
+  <code>0.25rem</code>, which translates to <code>4px</code> by default in
+  common browsers.
+</Description>
+
+<TokensGrid tokens={space} hasRemValue />
