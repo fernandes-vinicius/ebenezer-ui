@@ -1,7 +1,8 @@
 import { styled } from '../styles'
 import { ComponentProps } from '../types'
+import { Box } from './Box'
 
-export const Flex = styled('div', {
+export const Flex = styled(Box, {
   boxSizing: 'border-box',
   display: 'flex',
 

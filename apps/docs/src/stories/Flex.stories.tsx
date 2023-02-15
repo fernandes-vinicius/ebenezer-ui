@@ -4,6 +4,14 @@ import { Flex, FlexProps, Box, Text } from '@ebenezer-ui/react'
 export default {
   title: 'Layout/Flex',
   component: Flex,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'Flex is Box with display set to flex and comes with helpful style shorthand. It renders a `div` element.',
+      },
+    },
+  },
   args: {
     direction: 'row',
     align: 'stretch',
@@ -76,15 +84,3 @@ export default {
 } as Meta<FlexProps>
 
 export const Default: StoryObj<FlexProps> = {}
-
-export const Vertical: StoryObj<FlexProps> = {
-  args: {
-    direction: 'column',
-  },
-}
-
-export const Horizontal: StoryObj<FlexProps> = {
-  args: {
-    direction: 'row',
-  },
-}

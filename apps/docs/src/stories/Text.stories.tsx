@@ -4,6 +4,14 @@ import { Text, TextProps } from '@ebenezer-ui/react'
 export default {
   title: 'Typography/Text',
   component: Text,
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'Text is the used to render text and paragraphs within an interface. To increase the font size of the text, you can pass the `fontSize` prop.',
+      },
+    },
+  },
   args: {
     size: 'md',
     children:
@@ -39,5 +47,13 @@ export const CustomTag: StoryObj<TextProps> = {
   args: {
     children: 'Strong text',
     as: 'strong',
+  },
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'To override the element that gets rendered, pass the `as` prop. Use Inspect Element to see the element that gets rendered in html.',
+      },
+    },
   },
 }
