@@ -1,0 +1,4 @@
+{
+  "extends": "@ebenezer-ui/ts-config/react-library.json",
+  "include": ["src"]
+}
