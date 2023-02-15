@@ -7,7 +7,7 @@ export const Heading = styled('h2', {
   fontFamily: '$heading',
   fontWeight: '$bold',
   lineHeight: '$shorter',
-  color: '$gray900',
+  color: 'inherit',
 
   variants: {
     size: {
