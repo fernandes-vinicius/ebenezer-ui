@@ -1,7 +1,7 @@
 {
   "name": "@ebenezer-ui/eslint-config",
-  "version": "0.0.0",
   "private": true,
+  "version": "0.0.0",
   "main": "index.js",
   "devDependencies": {
     "@rocketseat/eslint-config": "^1.2.0",

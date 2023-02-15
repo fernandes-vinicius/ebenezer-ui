@@ -1,0 +1,34 @@
+{
+  "name": "@ebenezer-ui/docs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "build-storybook --output-dir dist",
+    "dev": "start-storybook -p 6006",
+    "deploy-storybook": "storybook-to-ghpages",
+    "lint": "TIMING=1 eslint \"src/**/*.ts*\"",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@storybook/addon-a11y": "^6.5.16",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-vite": "^0.4.2",
+    "@storybook/react": "^6.5.16",
+    "@storybook/testing-library": "^0.0.13",
+    "@vitejs/plugin-react": "^3.1.0",
+    "babel-loader": "^8.3.0",
+    "vite": "^4.1.1"
+  },
+  "dependencies": {
+    "@ebenezer-ui/eslint-config": "*",
+    "@ebenezer-ui/react": "*",
+    "@ebenezer-ui/tokens": "*",
+    "@ebenezer-ui/ts-config": "*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
