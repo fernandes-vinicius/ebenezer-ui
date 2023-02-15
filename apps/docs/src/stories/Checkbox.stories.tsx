@@ -1,33 +1,52 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Checkbox, CheckboxProps } from '@ebenezer-ui/react'
+import { Checkbox, CheckboxProps, Flex, Text } from '@ebenezer-ui/react'
 
 export default {
   title: 'Form/Checkbox',
   component: Checkbox,
-  args: {},
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'Checkbox component is used in forms when a user needs to select multiple values from several options.',
+      },
+    },
+  },
+  args: {
+    variant: 'primary',
+    disabled: false,
+  },
+  argTypes: {
+    variant: {
+      options: ['primary', 'secondary'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    disabled: {
+      control: {
+        type: 'boolean',
+      },
+    },
+  },
   decorators: [
     (Story) => {
       return (
-        <label style={{ display: 'flex', flexDirection: 'row', gap: '8px' }}>
+        <Flex as="label" gap="2">
           {Story()}
-          <span>Accept terms of use</span>
-        </label>
+          <Text size="sm" css={{ color: '$gray500' }}>
+            Accept terms of use
+          </Text>
+        </Flex>
       )
     },
   ],
-  // decorators: [
-  //   (Story) => {
-  //     return (
-  //       <Box
-  //         as="label"
-  //         css={{ display: 'flex', flexDirection: 'row', gap: '$2' }}
-  //       >
-  //         {Story()}
-  //         <Text size="sm">Accept terms of use</Text>
-  //       </Box>
-  //     )
-  //   },
-  // ],
 } as Meta<CheckboxProps>
 
 export const Primary: StoryObj<CheckboxProps> = {}
+
+export const Secondary: StoryObj<CheckboxProps> = {
+  args: {
+    variant: 'secondary',
+  },
+}
