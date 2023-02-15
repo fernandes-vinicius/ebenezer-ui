@@ -3,6 +3,7 @@ import { styled, keyframes } from '../../styles'
 
 export const CheckboxContainer = styled(Checkbox.Root, {
   all: 'unset',
+
   width: '$6',
   height: '$6',
   backgroundColor: 'transparent',
@@ -26,19 +27,23 @@ export const CheckboxContainer = styled(Checkbox.Root, {
     variant: {
       primary: {
         '&[data-state="checked"]': {
-          backgroundColor: '$indigo500',
+          '&:not(:disabled)': {
+            backgroundColor: '$indigo500',
+          },
         },
 
-        '&:focus': {
+        '&:not(:disabled):focus': {
           border: '2px solid $indigo500',
         },
       },
       secondary: {
         '&[data-state="checked"]': {
-          backgroundColor: '$sky500',
+          '&:not(:disabled)': {
+            backgroundColor: '$sky500',
+          },
         },
 
-        '&:focus': {
+        '&:not(:disabled):focus': {
           border: '2px solid $sky500',
         },
       },

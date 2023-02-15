@@ -8,7 +8,7 @@ export default {
     docs: {
       description: {
         component:
-          'Checkbox component is used in forms when a user needs to select multiple values from several options.',
+          'Checkbox component is used in forms when a user needs to select multiple values from several options. You can set the checkbox to `indeterminate` by taking control of its state.',
       },
     },
   },
@@ -48,5 +48,11 @@ export const Primary: StoryObj<CheckboxProps> = {}
 export const Secondary: StoryObj<CheckboxProps> = {
   args: {
     variant: 'secondary',
+  },
+}
+
+export const Disabled: StoryObj<CheckboxProps> = {
+  args: {
+    disabled: true,
   },
 }
