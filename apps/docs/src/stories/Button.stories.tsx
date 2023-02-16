@@ -37,11 +37,6 @@ export default {
         type: 'boolean',
       },
     },
-    children: {
-      control: {
-        type: null,
-      },
-    },
     onClick: { action: 'clicked' },
   },
 } as Meta<ButtonProps>
@@ -69,6 +64,18 @@ export const Link: StoryObj<ButtonProps> = {
 export const Small: StoryObj<ButtonProps> = {
   args: {
     size: 'sm',
+  },
+}
+
+export const Medium: StoryObj<ButtonProps> = {
+  args: {
+    size: 'md',
+  },
+}
+
+export const Large: StoryObj<ButtonProps> = {
+  args: {
+    size: 'lg',
   },
 }
 

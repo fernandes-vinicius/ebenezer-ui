@@ -1,13 +1,14 @@
 import { createStitches, defaultThemeMap } from '@stitches/react'
 import {
   colors,
-  radii,
-  space,
-  shadows,
   fonts,
   fontSizes,
   fontWeights,
   lineHeights,
+  radii,
+  space,
+  shadows,
+  zIndices,
 } from '@ebenezer-ui/tokens'
 
 export const {
@@ -28,12 +29,13 @@ export const {
 
   theme: {
     colors,
-    radii,
-    space,
-    shadows,
     fonts,
     fontSizes,
     fontWeights,
     lineHeights,
+    radii,
+    space,
+    shadows,
+    zIndices,
   },
 })
