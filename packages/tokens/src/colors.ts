@@ -46,6 +46,8 @@ export const colors = {
   orange800: '#9A3412',
   orange900: '#7C2D12',
 
+  //* branding colors
+
   brandPrimary50: '#EEF2FF',
   brandPrimary100: '#E0E7FF',
   brandPrimary200: '#C7D2FE',
