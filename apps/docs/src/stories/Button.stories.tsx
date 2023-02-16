@@ -18,6 +18,8 @@ export default {
     variant: 'solid',
     size: 'md',
     disabled: false,
+    isLoading: false,
+    loadingText: '',
   },
   argTypes: {
     variant: {
@@ -35,6 +37,16 @@ export default {
     disabled: {
       control: {
         type: 'boolean',
+      },
+    },
+    isLoading: {
+      control: {
+        type: 'boolean',
+      },
+    },
+    loadingText: {
+      control: {
+        type: 'text',
       },
     },
     onClick: { action: 'clicked' },
@@ -82,6 +94,13 @@ export const Large: StoryObj<ButtonProps> = {
 export const Disabled: StoryObj<ButtonProps> = {
   args: {
     disabled: true,
+  },
+}
+
+export const Loading: StoryObj<ButtonProps> = {
+  args: {
+    isLoading: true,
+    loadingText: 'Loading...',
   },
 }
 

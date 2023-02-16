@@ -1,7 +1,11 @@
-import { styled } from '../styles'
-import { ComponentProps } from '../types'
+import { keyframes, styled } from '../../styles'
 
-export const Button = styled('button', {
+const spin = keyframes({
+  '0%': { transform: 'rotate(0deg)' },
+  '100%': { transform: 'rotate(360deg)' },
+})
+
+export const ButtonContainer = styled('button', {
   all: 'unset',
 
   borderRadius: '$lg',
@@ -21,8 +25,8 @@ export const Button = styled('button', {
   cursor: 'pointer',
 
   svg: {
-    width: '$4',
-    height: '$4',
+    width: '$5',
+    height: '$5',
   },
 
   '&:disabled': {
@@ -100,6 +104,13 @@ export const Button = styled('button', {
         fontSize: '$lg',
       },
     },
+    isLoading: {
+      true: {
+        svg: {
+          animation: `${spin} 1s linear infinite`,
+        },
+      },
+    },
   },
 
   defaultVariants: {
@@ -107,7 +118,3 @@ export const Button = styled('button', {
     size: 'md',
   },
 })
-
-export interface ButtonProps extends ComponentProps<typeof Button> {}
-
-Button.displayName = 'Button'
