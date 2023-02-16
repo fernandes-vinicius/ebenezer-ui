@@ -1,10 +1,9 @@
-import { Button, Flex, Heading, Text } from '@ebenezer-ui/react'
+import { Button, Flex, Heading, Text, TextInput } from '@ebenezer-ui/react'
 
 export default function Home() {
   return (
     <Flex
       justify="center"
-      align="center"
       direction="column"
       gap="9"
       css={{
@@ -12,6 +11,7 @@ export default function Home() {
         maxWidth: 600,
         margin: '0 auto',
         textAlign: 'center',
+        padding: '0 $4',
       }}
     >
       <Heading as="h1" size="2xl">
@@ -30,7 +30,11 @@ export default function Home() {
         solves all these problems for you. 🎉
       </Text>
 
-      <Button variant="solid">Click me</Button>
+      <Flex as="form" direction="column" gap="4">
+        <TextInput placeholder="Email" type="email" />
+        <TextInput placeholder="Password" type="password" />
+        <Button>Submit</Button>
+      </Flex>
     </Flex>
   )
 }
