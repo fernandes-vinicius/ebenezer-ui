@@ -25,6 +25,12 @@ export const {
     ...defaultThemeMap,
     height: 'space',
     width: 'space',
+
+    minHeight: 'space',
+    minWidth: 'space',
+
+    maxHeight: 'space',
+    maxWidth: 'space',
   },
 
   theme: {
