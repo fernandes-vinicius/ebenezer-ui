@@ -30,15 +30,15 @@ export default {
     },
     children: (
       <>
-        <Box css={{ backgroundColor: '$green500' }}>
+        <Box css={{ backgroundColor: '$green700' }}>
           <Text>Box 1</Text>
         </Box>
 
-        <Box css={{ backgroundColor: '$indigo500' }}>
+        <Box css={{ backgroundColor: '$indigo600' }}>
           <Text>Box 2</Text>
         </Box>
 
-        <Box css={{ backgroundColor: '$red500' }}>
+        <Box css={{ backgroundColor: '$red600' }}>
           <Text>Box 3</Text>
         </Box>
       </>

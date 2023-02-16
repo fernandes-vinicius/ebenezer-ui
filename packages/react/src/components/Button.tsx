@@ -33,56 +33,55 @@ export const Button = styled('button', {
     variant: {
       solid: {
         color: '$white',
-        background: '$indigo500',
+        background: '$indigo600',
         borderColor: 'transparent',
-
-        '&:not(:disabled):hover': {
-          background: '$indigo600',
-        },
-
-        '&:disabled': {
-          color: '$gray400',
-          backgroundColor: '$gray200',
-        },
-      },
-      outline: {
-        color: '$indigo500',
-        border: '2px solid $indigo500',
-
-        '&:not(:disabled):hover': {
-          background: '$indigo500',
-          color: '$white',
-        },
-
-        '&:disabled': {
-          color: '$gray400',
-          borderColor: '$gray200',
-        },
-      },
-      ghost: {
-        color: '$indigo500',
-        // background: '$indigo50',
-
-        '&:not(:disabled):hover': {
-          background: '$indigo50',
-        },
 
         '&:disabled': {
           color: '$gray400',
           backgroundColor: '$gray100',
         },
+
+        '&:not(:disabled):hover': {
+          background: '$indigo700',
+        },
+      },
+      outline: {
+        color: '$indigo600',
+        border: '2px solid $indigo600',
+
+        '&:disabled': {
+          color: '$gray400',
+          borderColor: '$gray100',
+        },
+
+        '&:not(:disabled):hover': {
+          background: '$indigo600',
+          color: '$white',
+        },
+      },
+      ghost: {
+        color: '$indigo600',
+        // background: '$indigo50',
+
+        '&:disabled': {
+          color: '$gray400',
+        },
+
+        '&:not(:disabled):hover': {
+          background: '$indigo50',
+        },
       },
       link: {
-        color: '$indigo500',
+        color: '$indigo600',
+
+        '&:disabled': {
+          color: '$gray400',
+        },
 
         '&:not(:disabled):hover': {
           textDecoration: 'underline',
           textUnderlineOffset: '4px',
           textDecorationThickness: '2px',
-        },
-
-        '&:disabled': {
-          color: '$gray400',
         },
       },
     },

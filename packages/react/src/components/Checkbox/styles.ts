@@ -28,23 +28,25 @@ export const CheckboxContainer = styled(Checkbox.Root, {
       primary: {
         '&[data-state="checked"]': {
           '&:not(:disabled)': {
-            backgroundColor: '$indigo500',
+            borderColor: '$indigo600',
+            backgroundColor: '$indigo600',
           },
         },
 
         '&:not(:disabled):focus': {
-          border: '2px solid $indigo500',
+          border: '2px solid $indigo600',
         },
       },
       secondary: {
         '&[data-state="checked"]': {
           '&:not(:disabled)': {
-            backgroundColor: '$sky500',
+            borderColor: '$sky600',
+            backgroundColor: '$sky600',
           },
         },
 
         '&:not(:disabled):focus': {
-          border: '2px solid $sky500',
+          border: '2px solid $sky600',
         },
       },
     },
