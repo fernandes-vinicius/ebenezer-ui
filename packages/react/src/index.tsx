@@ -1,3 +1,5 @@
+export * from './styles'
+
 export * from './components/Avatar'
 export * from './components/Box'
 export * from './components/Button'
