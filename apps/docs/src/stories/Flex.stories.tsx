@@ -34,7 +34,7 @@ export default {
           <Text>Box 1</Text>
         </Box>
 
-        <Box css={{ backgroundColor: '$indigo600' }}>
+        <Box css={{ backgroundColor: '$brandPrimary600' }}>
           <Text>Box 2</Text>
         </Box>
 

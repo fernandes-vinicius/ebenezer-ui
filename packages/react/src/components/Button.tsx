@@ -33,7 +33,7 @@ export const Button = styled('button', {
     variant: {
       solid: {
         color: '$white',
-        background: '$indigo600',
+        background: '$brandPrimary600',
         borderColor: 'transparent',
 
         '&:disabled': {
@@ -42,12 +42,12 @@ export const Button = styled('button', {
         },
 
         '&:not(:disabled):hover': {
-          background: '$indigo700',
+          background: '$brandPrimary700',
         },
       },
       outline: {
-        color: '$indigo600',
-        border: '2px solid $indigo600',
+        color: '$brandPrimary600',
+        border: '2px solid $brandPrimary600',
 
         '&:disabled': {
           color: '$gray400',
@@ -55,24 +55,24 @@ export const Button = styled('button', {
         },
 
         '&:not(:disabled):hover': {
-          background: '$indigo600',
+          background: '$brandPrimary600',
           color: '$white',
         },
       },
       ghost: {
-        color: '$indigo600',
-        // background: '$indigo50',
+        color: '$brandPrimary600',
+        // background: '$brandPrimary50',
 
         '&:disabled': {
           color: '$gray400',
         },
 
         '&:not(:disabled):hover': {
-          background: '$indigo50',
+          background: '$brandPrimary50',
         },
       },
       link: {
-        color: '$indigo600',
+        color: '$brandPrimary600',
 
         '&:disabled': {
           color: '$gray400',
