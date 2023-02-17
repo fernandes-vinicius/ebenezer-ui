@@ -1,3 +1,4 @@
+import { AppleLogo } from 'phosphor-react'
 import {
   Box,
   Button,
@@ -7,6 +8,7 @@ import {
   FormHelperText,
   FormLabel,
   Heading,
+  IconButton,
   PasswordInput,
   Text,
   TextInput,
@@ -60,6 +62,12 @@ export default function Home() {
             </Flex>
           </FormControl>
         </Box>
+
+        <div>
+          <IconButton size="lg" disabled>
+            <AppleLogo weight="fill" />
+          </IconButton>
+        </div>
       </Flex>
     </Container>
   )
