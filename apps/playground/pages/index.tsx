@@ -7,6 +7,7 @@ import {
   FormHelperText,
   FormLabel,
   Heading,
+  PasswordInput,
   Text,
   TextInput,
 } from '@ebenezer-ui/react'
@@ -47,7 +48,7 @@ export default function Home() {
 
           <FormControl>
             <FormLabel htmlFor="password">Password</FormLabel>
-            <TextInput id="password" type="password" placeholder="********" />
+            <PasswordInput />
             <FormHelperText>
               We&apos;ll never share your password with anyone else.
             </FormHelperText>
