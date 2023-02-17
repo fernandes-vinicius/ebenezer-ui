@@ -11,16 +11,26 @@ export interface PasswordInputProps extends TextInputProps {}
 export const PasswordInput = forwardRef<
   ElementRef<typeof Input>,
   PasswordInputProps
->(({ size, isInvalid, type, ...rest }, ref) => {
+>(({ size, isInvalid, disabled, type, ...rest }, ref) => {
   const { isVisible, toggleVisibility } = usePasswordVisibility()
 
   return (
     <TextInputContainer size={size} isInvalid={isInvalid}>
-      <Input ref={ref} {...rest} type={isVisible ? 'text' : 'password'} />
+      <Input
+        ref={ref}
+        {...rest}
+        disabled={disabled}
+        type={isVisible ? 'text' : 'password'}
+      />
 
       {/* TODO ADD INPUT GROUP */}
       {/* TODO ADD TOOLTIP */}
-      <InputRightElement size="sm" type="button" onClick={toggleVisibility}>
+      <InputRightElement
+        size="sm"
+        type="button"
+        disabled={disabled}
+        onClick={toggleVisibility}
+      >
         {isVisible ? <EyeSlash weight="fill" /> : <Eye weight="fill" />}
       </InputRightElement>
     </TextInputContainer>
