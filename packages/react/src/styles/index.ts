@@ -9,6 +9,7 @@ import {
   space,
   shadows,
   zIndices,
+  breakpoints,
 } from '@ebenezer-ui/tokens'
 
 export const {
@@ -43,5 +44,9 @@ export const {
     space,
     shadows,
     zIndices,
+  },
+
+  media: {
+    ...breakpoints,
   },
 })
