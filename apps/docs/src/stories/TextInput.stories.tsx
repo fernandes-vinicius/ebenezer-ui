@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { TextInput, TextInputProps, Box } from '@ebenezer-ui/react'
 
 export default {
-  title: 'Form/TextInput',
+  title: 'Forms/TextInput',
   component: TextInput,
   parameters: {
     docs: {

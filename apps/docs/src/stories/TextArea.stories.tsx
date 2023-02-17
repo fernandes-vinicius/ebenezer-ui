@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { TextArea, TextAreaProps, Box } from '@ebenezer-ui/react'
 
 export default {
-  title: 'Form/TextArea',
+  title: 'Forms/TextArea',
   component: TextArea,
   parameters: {
     docs: {

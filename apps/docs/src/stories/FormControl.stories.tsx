@@ -9,7 +9,7 @@ import {
 } from '@ebenezer-ui/react'
 
 export default {
-  title: 'Form/FormControl',
+  title: 'Forms/FormControl',
   component: FormControl,
   parameters: {
     docs: {

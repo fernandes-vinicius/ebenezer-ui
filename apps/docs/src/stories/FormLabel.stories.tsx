@@ -8,7 +8,7 @@ import {
 } from '@ebenezer-ui/react'
 
 export default {
-  title: 'Form/FormLabel',
+  title: 'Forms/FormLabel',
   component: FormLabel,
   parameters: {
     docs: {

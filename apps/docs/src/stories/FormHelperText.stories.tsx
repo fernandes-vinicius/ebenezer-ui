@@ -8,7 +8,7 @@ import {
 } from '@ebenezer-ui/react'
 
 export default {
-  title: 'Form/FormHelperText',
+  title: 'Forms/FormHelperText',
   component: FormHelperText,
   parameters: {
     docs: {

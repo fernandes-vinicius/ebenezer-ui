@@ -3,7 +3,7 @@ import { AppleLogo } from 'phosphor-react'
 import { IconButton, IconButtonProps } from '@ebenezer-ui/react'
 
 export default {
-  title: 'Form/IconButton',
+  title: 'Forms/IconButton',
   component: IconButton,
   parameters: {
     docs: {

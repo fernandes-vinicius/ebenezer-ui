@@ -1,20 +1,47 @@
-import { AppleLogo } from 'phosphor-react'
+import { z } from 'zod'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { useForm } from 'react-hook-form'
 import {
   Box,
   Button,
   Container,
   Flex,
   FormControl,
-  FormHelperText,
+  FormErrorMessage,
   FormLabel,
   Heading,
-  IconButton,
   PasswordInput,
   Text,
   TextInput,
 } from '@ebenezer-ui/react'
 
+const formSchema = z.object({
+  email: z.string().email(),
+  password: z.string().min(8),
+})
+
+type FormData = z.infer<typeof formSchema>
+
 export default function Home() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+  } = useForm<FormData>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      email: '',
+      password: '',
+    },
+  })
+
+  function onSubmit(data: FormData) {
+    console.log(data)
+  }
+
+  const hasEmailError = !!errors.email
+  const hasPasswordError = !!errors.password
+
   return (
     <Container size="sm">
       <Flex
@@ -39,35 +66,39 @@ export default function Home() {
           solves all these problems for you. 🎉
         </Text>
 
-        <Box as="form">
+        <Box as="form" onSubmit={handleSubmit(onSubmit)}>
           <FormControl>
             <FormLabel htmlFor="email">Email address</FormLabel>
-            <TextInput id="email" type="email" placeholder="Email address" />
-            <FormHelperText>
-              We&apos;ll never share your email with anyone else.
-            </FormHelperText>
+            <TextInput
+              id="email"
+              type="email"
+              placeholder="Email address"
+              isInvalid={hasEmailError}
+              {...register('email')}
+            />
+            {errors.email && (
+              <FormErrorMessage>{errors.email.message}</FormErrorMessage>
+            )}
           </FormControl>
 
           <FormControl>
             <FormLabel htmlFor="password">Password</FormLabel>
-            <PasswordInput />
-            <FormHelperText>
-              We&apos;ll never share your password with anyone else.
-            </FormHelperText>
+            <PasswordInput
+              placeholder="********"
+              isInvalid={hasPasswordError}
+              {...register('password')}
+            />
+            {errors.password && (
+              <FormErrorMessage>{errors.password.message}</FormErrorMessage>
+            )}
           </FormControl>
 
           <FormControl>
             <Flex justify={{ '@md': 'end' }}>
-              <Button>Sign In</Button>
+              <Button disabled={isSubmitting}>Sign In</Button>
             </Flex>
           </FormControl>
         </Box>
-
-        <div>
-          <IconButton size="lg" disabled>
-            <AppleLogo weight="fill" />
-          </IconButton>
-        </div>
       </Flex>
     </Container>
   )

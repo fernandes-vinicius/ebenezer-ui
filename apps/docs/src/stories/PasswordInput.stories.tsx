@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { PasswordInput, PasswordInputProps, Box } from '@ebenezer-ui/react'
 
 export default {
-  title: 'Form/PasswordInput',
+  title: 'Forms/PasswordInput',
   component: PasswordInput,
   parameters: {
     docs: {

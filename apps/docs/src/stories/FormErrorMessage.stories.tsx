@@ -8,7 +8,7 @@ import {
 } from '@ebenezer-ui/react'
 
 export default {
-  title: 'Form/FormErrorMessage',
+  title: 'Forms/FormErrorMessage',
   component: FormErrorMessage,
   parameters: {
     docs: {

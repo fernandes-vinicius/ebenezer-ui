@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Checkbox, CheckboxProps, Flex, Text } from '@ebenezer-ui/react'
 
 export default {
-  title: 'Form/Checkbox',
+  title: 'Forms/Checkbox',
   component: Checkbox,
   parameters: {
     docs: {
