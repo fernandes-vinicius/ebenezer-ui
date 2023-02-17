@@ -28,7 +28,8 @@ export const Container = styled(Box, {
 
     disablePadding: {
       true: {
-        padding: 0,
+        paddingLeft: 0,
+        paddingRight: 0,
       },
     },
   },
