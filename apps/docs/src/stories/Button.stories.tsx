@@ -20,6 +20,7 @@ export default {
     disabled: false,
     isLoading: false,
     loadingText: '',
+    fullWidth: false,
   },
   argTypes: {
     variant: {
@@ -47,6 +48,11 @@ export default {
     loadingText: {
       control: {
         type: 'text',
+      },
+    },
+    fullWidth: {
+      control: {
+        type: 'boolean',
       },
     },
     onClick: { action: 'clicked' },

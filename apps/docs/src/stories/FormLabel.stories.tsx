@@ -1,5 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { FormLabel, FormLabelProps, Flex, TextInput } from '@ebenezer-ui/react'
+import {
+  FormLabel,
+  FormLabelProps,
+  Flex,
+  TextInput,
+  FormControl,
+} from '@ebenezer-ui/react'
 
 export default {
   title: 'Form/FormLabel',
@@ -18,9 +24,11 @@ export default {
   },
   decorators: [
     (Story) => (
-      <Flex as="form" direction="column" css={{ color: '$gray500' }}>
-        {Story()}
-        <TextInput id="email" type="email" placeholder="Email address" />
+      <Flex as="form" direction="column">
+        <FormControl>
+          {Story()}
+          <TextInput id="email" type="email" placeholder="Email address" />
+        </FormControl>
       </Flex>
     ),
   ],

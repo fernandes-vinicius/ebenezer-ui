@@ -4,6 +4,7 @@ import {
   FormHelperTextProps,
   Flex,
   TextInput,
+  FormControl,
 } from '@ebenezer-ui/react'
 
 export default {
@@ -23,8 +24,10 @@ export default {
   decorators: [
     (Story) => (
       <Flex as="form" direction="column">
-        <TextInput type="email" placeholder="Email address" />
-        {Story()}
+        <FormControl>
+          <TextInput type="email" placeholder="Email address" />
+          {Story()}
+        </FormControl>
       </Flex>
     ),
   ],

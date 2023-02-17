@@ -111,10 +111,16 @@ export const ButtonContainer = styled('button', {
         },
       },
     },
+    fullWidth: {
+      true: {
+        width: '100%',
+      },
+    },
   },
 
   defaultVariants: {
     variant: 'solid',
     size: 'md',
+    fullWidth: false,
   },
 })

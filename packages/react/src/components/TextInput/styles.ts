@@ -69,6 +69,7 @@ export const Input = styled('input', {
   color: '$gray900',
   fontFamily: '$default',
   fontWeight: '$semibold',
+  lineHeight: '$base',
   background: 'transparent',
   width: '100%',
   height: '100%',
