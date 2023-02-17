@@ -35,7 +35,9 @@ export default function Home() {
     },
   })
 
-  function onSubmit(data: FormData) {
+  async function onSubmit(data: FormData) {
+    await new Promise((resolve) => setTimeout(resolve, 5000))
+
     console.log(data)
   }
 
@@ -95,7 +97,14 @@ export default function Home() {
 
           <FormControl>
             <Flex justify={{ '@md': 'end' }}>
-              <Button disabled={isSubmitting}>Sign In</Button>
+              <Button
+                disabled={isSubmitting}
+                isLoading={isSubmitting}
+                loadingText="Signing in..."
+                type="submit"
+              >
+                Sign In
+              </Button>
             </Flex>
           </FormControl>
         </Box>
