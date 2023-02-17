@@ -9,6 +9,7 @@ import {
   space,
   shadows,
   zIndices,
+  screens,
   breakpoints,
 } from '@ebenezer-ui/tokens'
 
@@ -24,14 +25,6 @@ export const {
 } = createStitches({
   themeMap: {
     ...defaultThemeMap,
-    height: 'space',
-    width: 'space',
-
-    minHeight: 'space',
-    minWidth: 'space',
-
-    maxHeight: 'space',
-    maxWidth: 'space',
   },
 
   theme: {
@@ -44,6 +37,10 @@ export const {
     space,
     shadows,
     zIndices,
+    sizes: {
+      ...space,
+      ...screens,
+    },
   },
 
   media: {

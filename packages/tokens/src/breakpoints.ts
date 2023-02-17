@@ -1,7 +1,9 @@
+import { screens } from './screens'
+
 export const breakpoints = {
-  sm: '(min-width: 640px)',
-  md: '(min-width: 768px)',
-  lg: '(min-width: 1024px)',
-  xl: '(min-width: 1280px)',
-  '2xl': '(min-width: 1536px)',
+  sm: `(min-width: ${screens.sm})`,
+  md: `(min-width: ${screens.md})`,
+  lg: `(min-width: ${screens.lg})`,
+  xl: `(min-width: ${screens.xl})`,
+  '2xl': `(min-width: ${screens['2xl']})`,
 } as const
