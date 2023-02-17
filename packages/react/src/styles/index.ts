@@ -1,3 +1,4 @@
+// import type * as Stitches from '@stitches/react'
 import { createStitches, defaultThemeMap } from '@stitches/react'
 import {
   colors,
@@ -46,4 +47,12 @@ export const {
   media: {
     ...breakpoints,
   },
+
+  // TODO utils
+  // utils: {
+  //   // Abbreviated backgroundColor properties
+  //   bg: (value: Stitches.PropertyValue<'backgroundColor'>) => ({
+  //     backgroundColor: value,
+  //   }),
+  // },
 })
