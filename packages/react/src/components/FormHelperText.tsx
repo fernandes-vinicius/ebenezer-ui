@@ -1,12 +1,14 @@
 import { styled } from '../styles'
 import { ComponentProps } from '../types'
-import { Text } from './Text'
 
-export const FormHelperText = styled(Text, {
+export const FormHelperText = styled('span', {
   display: 'block',
+  textAlign: 'start',
   marginTop: '$2',
-  color: 'inherit',
-  fontSize: '$sm',
+  color: '$gray500',
+  fontFamily: '$default',
+  fontWeight: '$regular',
+  fontSize: '$xs',
 })
 
 export interface FormHelperTextProps
