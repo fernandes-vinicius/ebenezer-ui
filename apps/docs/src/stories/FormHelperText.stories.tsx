@@ -22,7 +22,7 @@ export default {
   },
   decorators: [
     (Story) => (
-      <Flex as="form" direction="column" css={{ color: '$red600' }}>
+      <Flex as="form" direction="column">
         <TextInput type="email" placeholder="Email address" />
         {Story()}
       </Flex>

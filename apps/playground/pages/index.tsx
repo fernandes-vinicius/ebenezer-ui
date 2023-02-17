@@ -1,12 +1,4 @@
-import {
-  Container,
-  Flex,
-  FormHelperText,
-  FormLabel,
-  Heading,
-  Text,
-  TextInput,
-} from '@ebenezer-ui/react'
+import { Container, Flex, Heading, Text } from '@ebenezer-ui/react'
 
 export default function Home() {
   return (
@@ -32,14 +24,6 @@ export default function Home() {
           Ebenezer UI is a library of React components built with Stitches that
           solves all these problems for you. 🎉
         </Text>
-
-        <Flex as="form" direction="column">
-          <div>
-            <FormLabel htmlFor="email">Email address</FormLabel>
-            <TextInput id="email" type="email" placeholder="Email address" />
-            <FormHelperText>Enter your email address</FormHelperText>
-          </div>
-        </Flex>
       </Flex>
     </Container>
   )

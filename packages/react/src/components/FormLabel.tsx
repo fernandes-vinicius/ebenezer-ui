@@ -10,6 +10,7 @@ export const FormLabel = styled('label', {
   fontFamily: '$default',
   fontWeight: '$regular',
   fontSize: '$sm',
+  lineHeight: '$base',
   color: '$gray900',
 })
 

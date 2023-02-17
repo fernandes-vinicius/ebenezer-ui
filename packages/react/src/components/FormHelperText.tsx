@@ -9,6 +9,7 @@ export const FormHelperText = styled('span', {
   fontFamily: '$default',
   fontWeight: '$regular',
   fontSize: '$xs',
+  lineHeight: '$base',
 })
 
 export interface FormHelperTextProps
