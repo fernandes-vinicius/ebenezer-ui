@@ -24,7 +24,7 @@ export const globalStyles = globalCss({
       src: "url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap')",
     },
     {
-      fontFamily: "'Source Sans Pro, sans-serif'",
+      fontFamily: "'Source Sans Pro', sans-serif",
       src: "url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap')",
     },
   ],
