@@ -48,9 +48,9 @@ export const {
     ...breakpoints,
   },
 
-  // TODO utils
   // utils: {
   //   // Abbreviated backgroundColor properties
+  //   // TODO Type utils using Stitches.PropertyValue<'backgroundColor'>
   //   bg: (value: Stitches.PropertyValue<'backgroundColor'>) => ({
   //     backgroundColor: value,
   //   }),
