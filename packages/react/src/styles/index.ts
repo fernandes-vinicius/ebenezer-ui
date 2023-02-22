@@ -6,11 +6,12 @@ import {
   fontSizes,
   fontWeights,
   lineHeights,
+  letterSpacings,
   radii,
   space,
   shadows,
   zIndices,
-  screens,
+  sizes,
   breakpoints,
 } from '@ebenezer-ui/tokens'
 
@@ -34,14 +35,13 @@ export const {
     fontSizes,
     fontWeights,
     lineHeights,
+    letterSpacings,
     radii,
     space,
     shadows,
     zIndices,
-    sizes: {
-      ...space,
-      ...screens,
-    },
+    sizes,
+    // TODO transitions
   },
 
   media: {

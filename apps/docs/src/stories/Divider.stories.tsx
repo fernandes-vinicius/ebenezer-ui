@@ -14,9 +14,6 @@ export default {
   },
   args: {
     variant: 'solid',
-    // css: {
-    //   borderColor: '$gray500',
-    // },
   },
   decorators: [(Story) => <Box css={{ padding: '$6' }}>{Story()}</Box>],
 } as Meta<DividerProps>

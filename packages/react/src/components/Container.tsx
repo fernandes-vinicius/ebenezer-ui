@@ -10,19 +10,19 @@ export const Container = styled(Box, {
   variants: {
     size: {
       sm: {
-        maxWidth: '$sm',
+        maxWidth: '$container-sm',
       },
       md: {
-        maxWidth: '$md',
+        maxWidth: '$container-md',
       },
       lg: {
-        maxWidth: '$lg',
+        maxWidth: '$container-lg',
       },
       xl: {
-        maxWidth: '$xl',
+        maxWidth: '$container-xl',
       },
       '2xl': {
-        maxWidth: '$2xl',
+        maxWidth: '$container-2xl',
       },
     },
 

@@ -111,6 +111,21 @@ export default function Home() {
             </Flex>
           </FormControl>
         </Box>
+
+        <Box
+          css={{
+            backgroundColor: '$white',
+            padding: '$4',
+            color: '$black',
+            borderRadius: '$3xl',
+            boxShadow: '$sm',
+          }}
+        >
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed natus,
+          magnam nostrum praesentium expedita assumenda vero tempora deserunt,
+          ut reiciendis eaque sit cum necessitatibus labore asperiores deleniti
+          accusantium, aspernatur obcaecati.
+        </Box>
       </Flex>
     </Container>
   )

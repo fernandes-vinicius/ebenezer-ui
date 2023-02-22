@@ -14,7 +14,7 @@ export default {
     },
   },
   args: {
-    variant: 'primary',
+    variant: 'neutral',
     children: 'Sample Tag',
   },
   argTypes: {

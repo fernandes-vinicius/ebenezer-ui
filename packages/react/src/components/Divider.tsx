@@ -3,9 +3,9 @@ import { ComponentProps } from '../types'
 
 export const Divider = styled('hr', {
   opacity: 0.6,
-  borderWidth: '0 0 1px',
+  borderBottomWidth: '1px',
   borderColor: '$gray300',
-  width: '100%',
+  width: '$full',
   margin: 0,
   boxSizing: 'content-box',
   height: 0,

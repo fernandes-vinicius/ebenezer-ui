@@ -7,7 +7,7 @@ export const Tag = styled('span', {
   justifyContent: 'center',
   gap: '$2',
 
-  maxWidth: '100%',
+  maxWidth: '$full',
   minWidth: '$6',
   minHeight: '$6',
   padding: '0 $2',
@@ -42,7 +42,7 @@ export const Tag = styled('span', {
   },
 
   defaultVariants: {
-    variant: 'primary',
+    variant: 'neutral',
   },
 })
 

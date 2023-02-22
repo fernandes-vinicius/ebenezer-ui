@@ -7,7 +7,6 @@ export const Card = styled(Box, {
   flexDirection: 'column',
 
   position: 'relative',
-  minWidth: 0,
   overflow: 'hidden',
   overflowWrap: 'break-word',
   backgroundColor: '$white',

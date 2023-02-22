@@ -1,0 +1,19 @@
+import { Meta } from "@storybook/addon-docs";
+import { sizes } from "@ebenezer-ui/tokens";
+import { Title } from "../../components/Title";
+import { Description } from "../../components/Description";
+import { TokensGrid } from "../../components/TokensGrid";
+
+<Meta title="Tokens/Sizes" />
+
+<Title>Sizes</Title>
+
+<Description>
+  The <code>`sizes`</code> key allows you to customize the global sizing of
+  components you build for your project. By default these sizes value can be
+  referenced by the <code>`width`</code>, <code>`height`</code>, and{" "}
+  <code>`maxWidth`</code>, <code>`minWidth`</code>, <code>`maxHeight`</code>,
+  <code>`minHeight`</code> styles.
+</Description>
+
+<TokensGrid tokens={sizes} />

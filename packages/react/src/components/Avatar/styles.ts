@@ -67,20 +67,21 @@ export const AvatarContainer = styled(Avatar.Root, {
 })
 
 export const AvatarImage = styled(Avatar.Image, {
-  width: '100%',
-  height: '100%',
+  width: '$full',
+  height: '$full',
   objectFit: 'cover',
   borderRadius: 'inherit',
 })
 
 export const AvatarFallback = styled(Avatar.Fallback, {
-  width: '100%',
-  height: '100%',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  backgroundColor: '$gray500',
+
+  width: '$full',
+  height: '$full',
   color: '$gray100',
+  backgroundColor: '$gray500',
 
   svg: {
     width: '$6',

@@ -1,5 +1,4 @@
 export * from './styles'
-export * from './utils/hexToRgba'
 
 export * from './components/Avatar'
 export * from './components/Box'
