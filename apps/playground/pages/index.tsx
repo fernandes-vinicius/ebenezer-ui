@@ -13,6 +13,7 @@ import {
   PasswordInput,
   Text,
   TextInput,
+  Tooltip,
 } from '@ebenezer-ui/react'
 
 const formSchema = z.object({
@@ -97,14 +98,16 @@ export default function Home() {
 
           <FormControl>
             <Flex justify={{ '@md': 'end' }}>
-              <Button
-                disabled={isSubmitting}
-                isLoading={isSubmitting}
-                loadingText="Signing in..."
-                type="submit"
-              >
-                Sign In
-              </Button>
+              <Tooltip text="eu sou um Tooltip">
+                <Button
+                  disabled={isSubmitting}
+                  isLoading={isSubmitting}
+                  loadingText="Signing in..."
+                  type="submit"
+                >
+                  Sign In
+                </Button>
+              </Tooltip>
             </Flex>
           </FormControl>
         </Box>

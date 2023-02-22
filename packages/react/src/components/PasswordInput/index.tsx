@@ -4,6 +4,7 @@ import { usePasswordVisibility } from '../../hooks/usePasswordVisibility'
 import { Input } from '../Input'
 import { TextInputProps } from '../TextInput'
 import { TextInputContainer } from '../TextInput/styles'
+import { Tooltip } from '../Tooltip'
 import { InputRightElement } from './styles'
 
 export interface PasswordInputProps extends TextInputProps {}
@@ -24,15 +25,16 @@ export const PasswordInput = forwardRef<
       />
 
       {/* TODO ADD INPUT GROUP */}
-      {/* TODO ADD TOOLTIP */}
-      <InputRightElement
-        size="sm"
-        type="button"
-        disabled={disabled}
-        onClick={toggleVisibility}
-      >
-        {isVisible ? <EyeSlash weight="fill" /> : <Eye weight="fill" />}
-      </InputRightElement>
+      <Tooltip text={isVisible ? 'Mostrar senha' : 'Ocultar senha'}>
+        <InputRightElement
+          size="sm"
+          type="button"
+          disabled={disabled}
+          onClick={toggleVisibility}
+        >
+          {isVisible ? <EyeSlash weight="fill" /> : <Eye weight="fill" />}
+        </InputRightElement>
+      </Tooltip>
     </TextInputContainer>
   )
 })

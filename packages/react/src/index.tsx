@@ -1,4 +1,5 @@
 export * from './styles'
+export * from './utils/hexToRgba'
 
 export * from './components/Avatar'
 export * from './components/Box'
@@ -22,4 +23,5 @@ export * from './components/Tag'
 export * from './components/Text'
 export * from './components/TextArea'
 export * from './components/TextInput'
+export * from './components/Tooltip'
 export * from './components/VisuallyHidden'
