@@ -15,8 +15,8 @@ export const CheckboxContainer = styled(Checkbox.Root, {
   border: '2px solid $gray200',
 
   display: 'flex',
-  justifyContent: 'center',
   alignItems: 'center',
+  justifyContent: 'center',
 
   '&:disabled': {
     cursor: 'not-allowed',

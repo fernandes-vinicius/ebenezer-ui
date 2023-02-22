@@ -3,7 +3,7 @@ import { ComponentProps } from '../types'
 import { Box } from './Box'
 
 export const Container = styled(Box, {
-  width: '100%',
+  width: '$full',
   margin: '0 auto',
   padding: '0 $4',
 

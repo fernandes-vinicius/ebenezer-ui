@@ -20,6 +20,13 @@ export default {
       height: '$28',
     },
   },
+  argTypes: {
+    children: {
+      control: {
+        type: null,
+      },
+    },
+  },
 } as Meta<CenterProps>
 
 export const Default: StoryObj<CenterProps> = {}

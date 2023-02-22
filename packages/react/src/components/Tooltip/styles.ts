@@ -29,7 +29,7 @@ export const Content = styled(TooltipPrimitive.Content, {
   fontSize: '$sm',
   lineHeight: '$short',
   textAlign: 'center',
-  letterSpacing: '-0.09px',
+  letterSpacing: '$normal',
   color: '$gray100',
 
   zIndex: '$40',

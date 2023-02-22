@@ -1,50 +1,6 @@
-import { z } from 'zod'
-import { zodResolver } from '@hookform/resolvers/zod'
-import { useForm } from 'react-hook-form'
-import {
-  Box,
-  Button,
-  Container,
-  Flex,
-  FormControl,
-  FormErrorMessage,
-  FormLabel,
-  Heading,
-  PasswordInput,
-  Text,
-  TextInput,
-  Tooltip,
-} from '@ebenezer-ui/react'
-
-const formSchema = z.object({
-  email: z.string().email(),
-  password: z.string().min(8),
-})
-
-type FormData = z.infer<typeof formSchema>
+import { Container, Flex, Heading, Text } from '@ebenezer-ui/react'
 
 export default function Home() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors, isSubmitting },
-  } = useForm<FormData>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      email: '',
-      password: '',
-    },
-  })
-
-  async function onSubmit(data: FormData) {
-    await new Promise((resolve) => setTimeout(resolve, 5000))
-
-    console.log(data)
-  }
-
-  const hasEmailError = !!errors.email
-  const hasPasswordError = !!errors.password
-
   return (
     <Container size="sm">
       <Flex
@@ -68,64 +24,6 @@ export default function Home() {
           Ebenezer UI is a library of React components built with Stitches that
           solves all these problems for you. 🎉
         </Text>
-
-        <Box as="form" onSubmit={handleSubmit(onSubmit)}>
-          <FormControl>
-            <FormLabel htmlFor="email">Email address</FormLabel>
-            <TextInput
-              id="email"
-              type="email"
-              placeholder="Email address"
-              isInvalid={hasEmailError}
-              {...register('email')}
-            />
-            {errors.email && (
-              <FormErrorMessage>{errors.email.message}</FormErrorMessage>
-            )}
-          </FormControl>
-
-          <FormControl>
-            <FormLabel htmlFor="password">Password</FormLabel>
-            <PasswordInput
-              placeholder="********"
-              isInvalid={hasPasswordError}
-              {...register('password')}
-            />
-            {errors.password && (
-              <FormErrorMessage>{errors.password.message}</FormErrorMessage>
-            )}
-          </FormControl>
-
-          <FormControl>
-            <Flex justify={{ '@md': 'end' }}>
-              <Tooltip text="eu sou um Tooltip">
-                <Button
-                  disabled={isSubmitting}
-                  isLoading={isSubmitting}
-                  loadingText="Signing in..."
-                  type="submit"
-                >
-                  Sign In
-                </Button>
-              </Tooltip>
-            </Flex>
-          </FormControl>
-        </Box>
-
-        <Box
-          css={{
-            backgroundColor: '$white',
-            padding: '$4',
-            color: '$black',
-            borderRadius: '$3xl',
-            boxShadow: '$sm',
-          }}
-        >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed natus,
-          magnam nostrum praesentium expedita assumenda vero tempora deserunt,
-          ut reiciendis eaque sit cum necessitatibus labore asperiores deleniti
-          accusantium, aspernatur obcaecati.
-        </Box>
       </Flex>
     </Container>
   )

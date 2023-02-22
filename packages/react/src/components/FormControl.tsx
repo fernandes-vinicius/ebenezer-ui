@@ -1,9 +1,10 @@
 import { styled } from '../styles'
 import { ComponentProps } from '../types'
+import { Box } from './Box'
 
-export const FormControl = styled('div', {
+export const FormControl = styled(Box, {
   position: 'relative',
-  width: '100%',
+  width: '$full',
 
   variants: {
     margin: {

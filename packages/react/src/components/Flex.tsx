@@ -3,7 +3,6 @@ import { ComponentProps } from '../types'
 import { Box } from './Box'
 
 export const Flex = styled(Box, {
-  boxSizing: 'border-box',
   display: 'flex',
 
   variants: {
@@ -96,6 +95,9 @@ export const Flex = styled(Box, {
       },
       9: {
         gap: '$9',
+      },
+      10: {
+        gap: '$10',
       },
     },
   },

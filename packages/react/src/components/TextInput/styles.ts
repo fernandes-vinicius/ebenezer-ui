@@ -1,9 +1,9 @@
 import { styled } from '../../styles'
+import { Box } from '../Box'
 
-export const TextInputContainer = styled('div', {
+export const TextInputContainer = styled(Box, {
   backgroundColor: '$white',
   borderRadius: '$lg',
-  boxSizing: 'border-box',
   border: '2px solid $gray200',
   overflow: 'hidden',
   textAlign: 'left',

@@ -8,7 +8,7 @@ export const TextArea = styled('textarea', {
   borderRadius: '$lg',
   boxSizing: 'border-box',
   border: '2px solid $gray200',
-  width: '100%',
+  width: '$full',
 
   color: '$gray900',
   fontFamily: '$default',

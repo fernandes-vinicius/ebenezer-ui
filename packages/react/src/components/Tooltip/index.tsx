@@ -20,7 +20,7 @@ export const Tooltip = forwardRef<ElementRef<typeof Trigger>, TooltipProps>(
           </Trigger>
 
           <TooltipPrimitive.Portal>
-            <Content sideOffset={20}>
+            <Content sideOffset={8}>
               {text}
               <Arrow />
             </Content>

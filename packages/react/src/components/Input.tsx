@@ -9,8 +9,8 @@ export const Input = styled('input', {
   fontWeight: '$semibold',
   lineHeight: '$base',
   background: 'transparent',
-  width: '100%',
-  height: '100%',
+  width: '$full',
+  height: '$full',
   border: 0,
 
   '&:focus': {
