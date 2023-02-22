@@ -19,7 +19,7 @@ module.exports = {
   },
   viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
-      config.base = '/ebenezer-ui-2/'
+      config.base = '/ebenezer-ui/'
     }
 
     return config
