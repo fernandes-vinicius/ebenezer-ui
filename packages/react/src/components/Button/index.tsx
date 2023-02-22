@@ -1,4 +1,5 @@
 import { Spinner } from 'phosphor-react'
+import { ElementRef, forwardRef } from 'react'
 import { ComponentProps } from '../../types'
 import { ButtonContainer } from './styles'
 
@@ -7,12 +8,14 @@ export interface ButtonProps extends ComponentProps<typeof ButtonContainer> {
   loadingText?: string
 }
 
-export function Button(props: ButtonProps) {
-  const { isLoading, loadingText, disabled, children, ...rest } = props
-
+export const Button = forwardRef<
+  ElementRef<typeof ButtonContainer>,
+  ButtonProps
+>(({ isLoading, loadingText, disabled, children, ...props }, ref) => {
   return (
     <ButtonContainer
-      {...rest}
+      ref={ref}
+      {...props}
       disabled={disabled || isLoading}
       isLoading={isLoading}
     >
@@ -21,6 +24,6 @@ export function Button(props: ButtonProps) {
       {isLoading ? loadingText : children}
     </ButtonContainer>
   )
-}
+})
 
 Button.displayName = 'Button'

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { AppleLogo } from 'phosphor-react'
-import { IconButton, IconButtonProps } from '@ebenezer-ui/react'
+import { IconButton, IconButtonProps, Tooltip } from '@ebenezer-ui/react'
 
 export default {
   title: 'Forms/IconButton',
@@ -35,6 +35,9 @@ export default {
       },
     },
   },
+  decorators: [
+    (Story) => <Tooltip text="Eu sou um tooltip">{Story()}</Tooltip>,
+  ],
 } as Meta<IconButtonProps>
 
 export const Default: StoryObj<IconButtonProps> = {}

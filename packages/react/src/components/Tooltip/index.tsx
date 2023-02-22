@@ -16,7 +16,7 @@ export const Tooltip = forwardRef<ElementRef<typeof Trigger>, TooltipProps>(
       <TooltipPrimitive.Provider delayDuration={100}>
         <TooltipPrimitive.Root>
           <Trigger ref={ref} {...props} asChild>
-            <span tabIndex={0}>{children}</span>
+            {children}
           </Trigger>
 
           <TooltipPrimitive.Portal>
