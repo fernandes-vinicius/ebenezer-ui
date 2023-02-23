@@ -6,5 +6,8 @@
   "devDependencies": {
     "@rocketseat/eslint-config": "^1.2.0",
     "eslint": "^8.34.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
