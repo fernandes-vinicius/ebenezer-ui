@@ -3,11 +3,7 @@ import { Heading } from '@ebenezer-ui/react'
 
 export function Title({ children }: { children?: ReactNode }) {
   return (
-    <Heading
-      as="h1"
-      size="xl"
-      css={{ color: '$gray900', marginBottom: '0.5rem' }}
-    >
+    <Heading as="h1" size="xl" css={{ color: '$gray-900', marginBottom: '$2' }}>
       {children}
     </Heading>
   )

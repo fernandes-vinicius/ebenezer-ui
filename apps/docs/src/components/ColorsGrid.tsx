@@ -2,7 +2,7 @@ import { getContrast } from 'polished'
 import { Box, Flex, Heading, Text } from '@ebenezer-ui/react'
 import { colors } from '@ebenezer-ui/tokens'
 
-const contrast = '#FFF'
+const contrast = colors.white
 
 export function ColorsGrid() {
   return Object.entries(colors).map(([key, color]) => {
@@ -12,7 +12,6 @@ export function ColorsGrid() {
           justify="between"
           align="center"
           css={{
-            fontFamily: 'monospace',
             color: getContrast(color, contrast) < 3.5 ? '$black' : '$white',
           }}
         >
