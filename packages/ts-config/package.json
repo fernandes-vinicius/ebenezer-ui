@@ -1,8 +1,5 @@
 {
   "name": "@ebenezer-ui/ts-config",
   "private": true,
-  "version": "1.0.0",
-  "publishConfig": {
-    "access": "public"
-  }
+  "version": "1.0.0"
 }
