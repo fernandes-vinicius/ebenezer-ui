@@ -1,5 +1,5 @@
-import { styled } from '../styles'
-import { ComponentProps } from '../types'
+import { styled } from '@/styles'
+import { ComponentProps } from '@/types'
 
 export const Tag = styled('span', {
   display: 'inline-flex',
@@ -12,12 +12,13 @@ export const Tag = styled('span', {
   minHeight: '$6',
   padding: '0 $2',
   borderRadius: '$full',
-  border: '1px solid transparent',
+  border: '$borderWidths$1 $borderStyles$solid $colors$transparent',
 
   fontSize: '$sm',
-  fontFamily: '$heading',
+  fontFamily: '$default',
   fontWeight: '$semibold',
-  lineHeight: 0,
+  lineHeight: '$none',
+  textTransform: 'lowercase',
 
   svg: {
     width: '$4',
@@ -27,16 +28,16 @@ export const Tag = styled('span', {
   variants: {
     variant: {
       primary: {
-        color: '$brandPrimary700',
-        backgroundColor: '$brandPrimary50',
+        color: '$primary-600',
+        backgroundColor: '$primary-50',
       },
       secondary: {
-        color: '$brandSecondary700',
-        backgroundColor: '$brandSecondary50',
+        color: '$secondary-700',
+        backgroundColor: '$secondary-50',
       },
       neutral: {
-        color: '$gray700',
-        backgroundColor: '$gray100',
+        color: '$gray-700',
+        backgroundColor: '$gray-100',
       },
     },
   },

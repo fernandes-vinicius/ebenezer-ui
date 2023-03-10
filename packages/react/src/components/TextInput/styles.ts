@@ -1,18 +1,18 @@
-import { styled } from '../../styles'
-import { Box } from '../Box'
+import { Box } from '@/components/Box'
+import { styled } from '@/styles'
 
 export const TextInputContainer = styled(Box, {
-  backgroundColor: '$white',
-  borderRadius: '$lg',
-  border: '2px solid $gray200',
-  overflow: 'hidden',
-  textAlign: 'left',
-
   display: 'flex',
   alignItems: 'center',
 
+  overflow: 'hidden',
+  textAlign: 'left',
+  backgroundColor: '$white',
+  borderRadius: '$lg',
+  border: '$borderWidths$2 $borderStyles$solid $colors$gray-200',
+
   '&:has(input:focus)': {
-    borderColor: '$brandPrimary600',
+    borderColor: '$primary-600',
   },
 
   '&:has(input:disabled)': {
@@ -21,14 +21,9 @@ export const TextInputContainer = styled(Box, {
   },
 
   variants: {
-    isInvalid: {
-      true: {
-        borderColor: '$red600',
-      },
-    },
     size: {
       sm: {
-        height: '$8',
+        minHeight: '$8',
 
         '&>input': {
           fontSize: '$sm',
@@ -37,7 +32,7 @@ export const TextInputContainer = styled(Box, {
         },
       },
       md: {
-        height: '$12',
+        minHeight: '$12',
 
         '&>input': {
           fontSize: '$sm',
@@ -46,13 +41,18 @@ export const TextInputContainer = styled(Box, {
         },
       },
       lg: {
-        height: '$16',
+        minHeight: '$16',
 
         '&>input': {
           fontSize: '$lg',
           paddingLeft: '$6',
           paddingRight: '$6',
         },
+      },
+    },
+    isInvalid: {
+      true: {
+        borderColor: '$red-600',
       },
     },
   },

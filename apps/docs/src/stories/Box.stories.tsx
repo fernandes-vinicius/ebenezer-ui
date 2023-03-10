@@ -14,7 +14,7 @@ export default {
   },
   args: {
     css: {
-      backgroundColor: '$red600',
+      backgroundColor: '$red-600',
       color: '$white',
       padding: '$4',
       borderRadius: '$lg',

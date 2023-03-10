@@ -15,9 +15,10 @@ export default {
   args: {
     children: <Text>This is the Center</Text>,
     css: {
-      backgroundColor: '$red600',
+      borderRadius: '$lg',
+      backgroundColor: '$red-600',
       color: '$white',
-      height: '$28',
+      height: '$32',
     },
   },
   argTypes: {

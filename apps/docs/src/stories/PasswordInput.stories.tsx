@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { PasswordInput, PasswordInputProps, Box } from '@ebenezer-ui/react'
 
 export default {
-  title: 'Forms/PasswordInput',
+  title: 'Form/PasswordInput',
   component: PasswordInput,
   parameters: {
     docs: {
@@ -43,7 +43,7 @@ export default {
   },
   decorators: [
     (Story) => (
-      <Box css={{ padding: '$6', backgroundColor: '$gray100' }}>{Story()}</Box>
+      <Box css={{ padding: '$6', backgroundColor: '$gray-100' }}>{Story()}</Box>
     ),
   ],
 } as Meta<PasswordInputProps>

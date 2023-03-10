@@ -1,5 +1,5 @@
-import { styled } from '../styles'
-import { ComponentProps } from '../types'
+import { styled } from '@/styles'
+import { ComponentProps } from '@/types'
 
 export const TextArea = styled('textarea', {
   all: 'unset',
@@ -7,10 +7,10 @@ export const TextArea = styled('textarea', {
   backgroundColor: '$white',
   borderRadius: '$lg',
   boxSizing: 'border-box',
-  border: '2px solid $gray200',
+  border: '$borderWidths$2 $borderStyles$solid $colors$gray-200',
   width: '$full',
 
-  color: '$gray900',
+  color: '$gray-900',
   fontFamily: '$default',
   fontSize: '$sm',
   fontWeight: '$semibold',
@@ -19,7 +19,7 @@ export const TextArea = styled('textarea', {
 
   '&:focus': {
     outline: 0,
-    borderColor: '$brandPrimary600',
+    borderColor: '$primary-600',
   },
 
   '&:disabled': {
@@ -29,15 +29,10 @@ export const TextArea = styled('textarea', {
 
   '&::placeholder': {
     fontWeight: '$regular',
-    color: '$gray500',
+    color: '$gray-500',
   },
 
   variants: {
-    isInvalid: {
-      true: {
-        borderColor: '$red600',
-      },
-    },
     size: {
       sm: {
         padding: '$2 $3',
@@ -48,6 +43,11 @@ export const TextArea = styled('textarea', {
       lg: {
         fontSize: '$lg',
         padding: '$4 $6',
+      },
+    },
+    isInvalid: {
+      true: {
+        borderColor: '$red-600',
       },
     },
   },

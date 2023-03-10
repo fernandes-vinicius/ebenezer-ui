@@ -1,5 +1,6 @@
 import * as Checkbox from '@radix-ui/react-checkbox'
-import { styled, keyframes } from '../../styles'
+
+import { styled, keyframes } from '@/styles'
 
 export const CheckboxContainer = styled(Checkbox.Root, {
   all: 'unset',
@@ -8,11 +9,11 @@ export const CheckboxContainer = styled(Checkbox.Root, {
   height: '$6',
   backgroundColor: 'transparent',
   borderRadius: '$md',
-  lineHeight: 0,
+  lineHeight: '$none',
   cursor: 'pointer',
   overflow: 'hidden',
   boxSizing: 'border-box',
-  border: '2px solid $gray200',
+  border: '$borderWidths$2 $borderStyles$solid $colors$gray-200',
 
   display: 'flex',
   alignItems: 'center',
@@ -20,7 +21,7 @@ export const CheckboxContainer = styled(Checkbox.Root, {
 
   '&:disabled': {
     cursor: 'not-allowed',
-    backgroundColor: '$gray100',
+    backgroundColor: '$gray-100',
   },
 
   variants: {
@@ -28,25 +29,25 @@ export const CheckboxContainer = styled(Checkbox.Root, {
       primary: {
         '&[data-state="checked"]': {
           '&:not(:disabled)': {
-            borderColor: '$brandPrimary600',
-            backgroundColor: '$brandPrimary600',
+            borderColor: '$primary-600',
+            backgroundColor: '$primary-600',
           },
         },
 
         '&:not(:disabled):focus': {
-          border: '2px solid $brandPrimary600',
+          borderColor: '$primary-600',
         },
       },
       secondary: {
         '&[data-state="checked"]': {
           '&:not(:disabled)': {
-            borderColor: '$brandSecondary600',
-            backgroundColor: '$brandSecondary600',
+            borderColor: '$secondary-700',
+            backgroundColor: '$secondary-700',
           },
         },
 
         '&:not(:disabled):focus': {
-          border: '2px solid $brandSecondary600',
+          borderColor: '$secondary-700',
         },
       },
     },

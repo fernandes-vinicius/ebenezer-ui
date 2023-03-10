@@ -1,15 +1,10 @@
-import { styled } from '../styles'
-import { ComponentProps } from '../types'
+import { styled } from '@/styles'
+import { ComponentProps } from '@/types'
 
-export const FormErrorMessage = styled('span', {
-  display: 'flex',
-  alignItems: 'center',
-  marginTop: '$2',
-  color: '$red600',
-  fontFamily: '$default',
-  fontWeight: '$regular',
-  fontSize: '$xs',
-  lineHeight: '$base',
+import { FormHelperText } from './FormHelperText'
+
+export const FormErrorMessage = styled(FormHelperText, {
+  color: '$red-600',
 })
 
 export interface FormErrorMessageProps

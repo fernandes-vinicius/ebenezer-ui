@@ -14,10 +14,11 @@ export default {
   },
   args: {
     size: 'md',
-    disablePadding: false,
     css: {
       color: '$white',
-      backgroundColor: '$brandPrimary600',
+      backgroundColor: '$red-600',
+      borderRadius: '$sm',
+      minHeight: '$h-screen',
     },
     children: <Text>Container</Text>,
   },
@@ -26,16 +27,6 @@ export default {
       options: ['sm', 'md', 'lg', '2xl'],
       control: {
         type: 'inline-radio',
-      },
-    },
-    disablePadding: {
-      control: {
-        type: 'boolean',
-      },
-    },
-    css: {
-      control: {
-        type: null,
       },
     },
     children: {

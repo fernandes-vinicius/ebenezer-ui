@@ -15,7 +15,6 @@ export default {
   args: {
     src: 'https://github.com/fernandes-vinicius.png',
     alt: 'Vinícius Fernandes',
-    square: false,
     size: 'md',
     children: 'VF',
   },
@@ -25,13 +24,8 @@ export default {
         type: 'text',
       },
     },
-    square: {
-      control: {
-        type: 'boolean',
-      },
-    },
     size: {
-      options: ['xs', 'sm', 'md', 'lg', 'xl', '2xl'],
+      options: ['sm', 'md', 'lg'],
       control: {
         type: 'inline-radio',
       },
@@ -41,26 +35,9 @@ export default {
 
 export const Default: StoryObj<AvatarProps> = {}
 
-export const Square: StoryObj<AvatarProps> = {
-  args: {
-    square: true,
-  },
-}
-
 export const WithFallback: StoryObj<AvatarProps> = {
-  // parameters: {
-  //   backgrounds: {
-  //     default: 'light',
-  //   },
-  // },
   args: {
     src: undefined,
-  },
-}
-
-export const ExtraSmall: StoryObj<AvatarProps> = {
-  args: {
-    size: 'xs',
   },
 }
 
@@ -79,17 +56,5 @@ export const Medium: StoryObj<AvatarProps> = {
 export const Large: StoryObj<AvatarProps> = {
   args: {
     size: 'lg',
-  },
-}
-
-export const ExtraLarge: StoryObj<AvatarProps> = {
-  args: {
-    size: 'xl',
-  },
-}
-
-export const Biggest: StoryObj<AvatarProps> = {
-  args: {
-    size: '2xl',
   },
 }

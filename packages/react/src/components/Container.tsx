@@ -1,11 +1,12 @@
-import { styled } from '../styles'
-import { ComponentProps } from '../types'
+import { styled } from '@/styles'
+import { ComponentProps } from '@/types'
+
 import { Box } from './Box'
 
 export const Container = styled(Box, {
   width: '$full',
-  margin: '0 auto',
-  padding: '0 $4',
+  margin: '$0 auto',
+  padding: '$0 $4',
 
   variants: {
     size: {
@@ -25,18 +26,10 @@ export const Container = styled(Box, {
         maxWidth: '$container-2xl',
       },
     },
-
-    disablePadding: {
-      true: {
-        paddingLeft: 0,
-        paddingRight: 0,
-      },
-    },
   },
 
   defaultVariants: {
     size: 'md',
-    disablePadding: false,
   },
 })
 

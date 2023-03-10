@@ -1,33 +1,20 @@
 import * as Avatar from '@radix-ui/react-avatar'
-import { styled } from '../../styles'
+
+import { styled } from '@/styles'
 
 export const AvatarContainer = styled(Avatar.Root, {
-  borderRadius: '$full',
+  color: '$white',
+  backgroundColor: '$gray-900',
+
   display: 'inline-block',
+  borderRadius: '$full',
   overflow: 'hidden',
 
   variants: {
-    square: {
-      true: {
-        borderRadius: '$lg',
-      },
-    },
     size: {
-      xs: {
-        width: '$6',
-        height: '$6',
-        svg: {
-          width: '$3',
-          height: '$3',
-        },
-      },
       sm: {
         width: '$8',
         height: '$8',
-        svg: {
-          width: '$4',
-          height: '$4',
-        },
       },
       md: {
         width: '$12',
@@ -36,32 +23,11 @@ export const AvatarContainer = styled(Avatar.Root, {
       lg: {
         width: '$16',
         height: '$16',
-        svg: {
-          width: '$8',
-          height: '$8',
-        },
-      },
-      xl: {
-        width: '$24',
-        height: '$24',
-        svg: {
-          width: '$12',
-          height: '$12',
-        },
-      },
-      '2xl': {
-        width: '$32',
-        height: '$32',
-        svg: {
-          width: '$16',
-          height: '$16',
-        },
       },
     },
   },
 
   defaultVariants: {
-    square: false,
     size: 'md',
   },
 })
@@ -80,11 +46,9 @@ export const AvatarFallback = styled(Avatar.Fallback, {
 
   width: '$full',
   height: '$full',
-  color: '$gray100',
-  backgroundColor: '$gray500',
+  backgroundColor: 'inherit',
 
-  svg: {
-    width: '$6',
-    height: '$6',
-  },
+  fontFamily: '$default',
+  fontWeight: '$semibold',
+  lineHeight: '$none',
 })

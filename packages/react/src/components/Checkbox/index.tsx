@@ -1,5 +1,7 @@
 import type { ComponentProps } from 'react'
+
 import { Check } from 'phosphor-react'
+
 import { CheckboxContainer, CheckboxIndicator } from './styles'
 
 export interface CheckboxProps

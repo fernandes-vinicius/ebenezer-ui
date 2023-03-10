@@ -1,17 +1,18 @@
-import { styled } from '../styles'
-import { ComponentProps } from '../types'
+import { styled } from '@/styles'
+import { ComponentProps } from '@/types'
 
 export const Input = styled('input', {
   all: 'unset',
 
-  color: '$gray900',
-  fontFamily: '$default',
-  fontWeight: '$semibold',
-  lineHeight: '$base',
   background: 'transparent',
   width: '$full',
   height: '$full',
   border: 0,
+
+  color: '$gray-900',
+  fontFamily: '$default',
+  fontWeight: '$semibold',
+  lineHeight: '$6',
 
   '&:focus': {
     outline: 0,
@@ -23,7 +24,7 @@ export const Input = styled('input', {
 
   '&::placeholder': {
     fontWeight: '$regular',
-    color: '$gray500',
+    color: '$gray-500',
   },
 })
 

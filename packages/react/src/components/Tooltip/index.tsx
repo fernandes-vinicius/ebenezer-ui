@@ -1,23 +1,24 @@
 import { ElementRef, forwardRef, ReactNode } from 'react'
+
 import * as TooltipPrimitive from '@radix-ui/react-tooltip'
 
 import { Arrow, Content } from './styles'
+
+type TooltipRef = ElementRef<typeof TooltipPrimitive.Trigger>
 
 export interface TooltipProps {
   text: string
   children: ReactNode
 }
 
-const Trigger = TooltipPrimitive.Trigger
-
-export const Tooltip = forwardRef<ElementRef<typeof Trigger>, TooltipProps>(
-  ({ text, children, ...props }, ref) => {
+export const Tooltip = forwardRef<TooltipRef, TooltipProps>(
+  ({ text, children, ...rest }, ref) => {
     return (
       <TooltipPrimitive.Provider delayDuration={100}>
         <TooltipPrimitive.Root>
-          <Trigger ref={ref} {...props} asChild>
+          <TooltipPrimitive.Trigger ref={ref} {...rest} asChild>
             {children}
-          </Trigger>
+          </TooltipPrimitive.Trigger>
 
           <TooltipPrimitive.Portal>
             <Content sideOffset={8}>

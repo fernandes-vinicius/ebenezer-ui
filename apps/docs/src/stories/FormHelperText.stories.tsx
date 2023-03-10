@@ -2,13 +2,13 @@ import type { Meta, StoryObj } from '@storybook/react'
 import {
   FormHelperText,
   FormHelperTextProps,
-  Flex,
   TextInput,
   FormControl,
+  Box,
 } from '@ebenezer-ui/react'
 
 export default {
-  title: 'Forms/FormHelperText',
+  title: 'Form/FormHelperText',
   component: FormHelperText,
   parameters: {
     docs: {
@@ -23,12 +23,12 @@ export default {
   },
   decorators: [
     (Story) => (
-      <Flex as="form" direction="column">
+      <Box as="form">
         <FormControl>
           <TextInput type="email" placeholder="Email address" />
           {Story()}
         </FormControl>
-      </Flex>
+      </Box>
     ),
   ],
 } as Meta<FormHelperTextProps>

@@ -2,14 +2,14 @@ import type { Meta, StoryObj } from '@storybook/react'
 import {
   FormControl,
   FormControlProps,
-  Flex,
   FormLabel,
   TextInput,
   FormHelperText,
+  Box,
 } from '@ebenezer-ui/react'
 
 export default {
-  title: 'Forms/FormControl',
+  title: 'Form/FormControl',
   component: FormControl,
   parameters: {
     docs: {
@@ -46,14 +46,14 @@ export default {
   },
   decorators: [
     (Story) => (
-      <Flex as="form" direction="column">
+      <Box as="form">
         {Story()}
         <FormControl>
           <FormLabel htmlFor="password">Password</FormLabel>
           <TextInput id="password" type="password" placeholder="Password" />
           <FormHelperText>Enter your password to continue.</FormHelperText>
         </FormControl>
-      </Flex>
+      </Box>
     ),
   ],
 } as Meta<FormControlProps>

@@ -1,5 +1,6 @@
-import { styled } from '../styles'
-import { ComponentProps } from '../types'
+import { styled } from '@/styles'
+import { ComponentProps } from '@/types'
+
 import { Box } from './Box'
 
 export const Flex = styled(Box, {

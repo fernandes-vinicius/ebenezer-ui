@@ -5,8 +5,8 @@ export default {
   title: 'Overlay/Tooltip',
   component: Tooltip,
   args: {
-    text: 'Eu sou um Tooltip',
-    children: <Button>Passe o mouse sobre mim</Button>,
+    text: "I'm a tooltip",
+    children: <Button>Hover me</Button>,
   },
   argTypes: {
     children: {

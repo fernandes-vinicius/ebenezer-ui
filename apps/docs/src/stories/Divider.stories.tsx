@@ -15,6 +15,14 @@ export default {
   args: {
     variant: 'solid',
   },
+  argTypes: {
+    variant: {
+      options: ['solid', 'dashed'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+  },
   decorators: [(Story) => <Box css={{ padding: '$6' }}>{Story()}</Box>],
 } as Meta<DividerProps>
 

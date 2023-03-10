@@ -1,7 +1,11 @@
 import { ElementRef, forwardRef } from 'react'
-import { ComponentProps } from '../../types'
-import { Input } from '../Input'
+
+import { Input } from '@/components/Input'
+import { ComponentProps } from '@/types'
+
 import { TextInputContainer } from './styles'
+
+export type TextInputRef = ElementRef<typeof TextInputContainer>
 
 export interface TextInputProps
   extends Omit<ComponentProps<typeof Input>, 'size'> {
@@ -9,11 +13,11 @@ export interface TextInputProps
   isInvalid?: ComponentProps<typeof TextInputContainer>['isInvalid']
 }
 
-export const TextInput = forwardRef<ElementRef<typeof Input>, TextInputProps>(
-  ({ size, isInvalid, ...props }, ref) => {
+export const TextInput = forwardRef<TextInputRef, TextInputProps>(
+  ({ size, isInvalid, ...rest }, ref) => {
     return (
       <TextInputContainer size={size} isInvalid={isInvalid}>
-        <Input ref={ref} {...props} />
+        <Input ref={ref} {...rest} />
       </TextInputContainer>
     )
   },

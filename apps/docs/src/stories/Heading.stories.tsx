@@ -35,8 +35,7 @@ export const CustomTag: StoryObj<HeadingProps> = {
   parameters: {
     docs: {
       description: {
-        story:
-          '`Heading` composes `Box` so you can use all the style props and add responsive styles as well. It renders an `<h2>` tag by default.',
+        story: 'It renders an `<h2>` tag by default.',
       },
     },
   },

@@ -2,13 +2,13 @@ import type { Meta, StoryObj } from '@storybook/react'
 import {
   FormErrorMessage,
   FormErrorMessageProps,
-  Flex,
   TextInput,
   FormControl,
+  Box,
 } from '@ebenezer-ui/react'
 
 export default {
-  title: 'Forms/FormErrorMessage',
+  title: 'Form/FormErrorMessage',
   component: FormErrorMessage,
   parameters: {
     docs: {
@@ -22,12 +22,12 @@ export default {
   },
   decorators: [
     (Story) => (
-      <Flex as="form" direction="column">
+      <Box as="form">
         <FormControl>
           <TextInput type="email" placeholder="Email address" isInvalid />
           {Story()}
         </FormControl>
-      </Flex>
+      </Box>
     ),
   ],
 } as Meta<FormErrorMessageProps>

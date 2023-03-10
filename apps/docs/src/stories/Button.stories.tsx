@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Button, ButtonProps } from '@ebenezer-ui/react'
 
 export default {
-  title: 'Forms/Button',
+  title: 'Form/Button',
   component: Button,
   parameters: {
     docs: {
@@ -14,17 +14,22 @@ export default {
     },
   },
   args: {
-    children: 'Button',
+    color: 'primary',
     variant: 'solid',
     size: 'md',
     disabled: false,
-    isLoading: false,
-    loadingText: '',
+    children: 'Button',
     fullWidth: false,
   },
   argTypes: {
+    color: {
+      options: ['primary', 'secondary'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
     variant: {
-      options: ['solid', 'outline', 'ghost', 'link'],
+      options: ['solid', 'outline', 'ghost', 'text', 'link'],
       control: {
         type: 'inline-radio',
       },
@@ -35,22 +40,12 @@ export default {
         type: 'inline-radio',
       },
     },
-    disabled: {
-      control: {
-        type: 'boolean',
-      },
-    },
-    isLoading: {
-      control: {
-        type: 'boolean',
-      },
-    },
-    loadingText: {
-      control: {
-        type: 'text',
-      },
-    },
     fullWidth: {
+      control: {
+        type: 'boolean',
+      },
+    },
+    disabled: {
       control: {
         type: 'boolean',
       },
@@ -59,7 +54,15 @@ export default {
   },
 } as Meta<ButtonProps>
 
-export const Solid: StoryObj<ButtonProps> = {}
+export const Default: StoryObj<ButtonProps> = {}
+
+export const Primary: StoryObj<ButtonProps> = {}
+
+export const Secondary: StoryObj<ButtonProps> = {
+  args: {
+    color: 'secondary',
+  },
+}
 
 export const Outline: StoryObj<ButtonProps> = {
   args: {
@@ -70,6 +73,12 @@ export const Outline: StoryObj<ButtonProps> = {
 export const Ghost: StoryObj<ButtonProps> = {
   args: {
     variant: 'ghost',
+  },
+}
+
+export const Text: StoryObj<ButtonProps> = {
+  args: {
+    variant: 'text',
   },
 }
 
@@ -100,13 +109,6 @@ export const Large: StoryObj<ButtonProps> = {
 export const Disabled: StoryObj<ButtonProps> = {
   args: {
     disabled: true,
-  },
-}
-
-export const Loading: StoryObj<ButtonProps> = {
-  args: {
-    isLoading: true,
-    loadingText: 'Loading...',
   },
 }
 

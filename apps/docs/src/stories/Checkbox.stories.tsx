@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Checkbox, CheckboxProps, Flex, Text } from '@ebenezer-ui/react'
 
 export default {
-  title: 'Forms/Checkbox',
+  title: 'Form/Checkbox',
   component: Checkbox,
   parameters: {
     docs: {
@@ -34,7 +34,8 @@ export default {
       return (
         <Flex as="label" gap="2">
           {Story()}
-          <Text size="sm" css={{ color: '$gray500' }}>
+
+          <Text as="span" size="sm" css={{ color: '$gray-500' }}>
             Accept terms of use
           </Text>
         </Flex>
@@ -43,7 +44,7 @@ export default {
   ],
 } as Meta<CheckboxProps>
 
-export const Primary: StoryObj<CheckboxProps> = {}
+export const Default: StoryObj<CheckboxProps> = {}
 
 export const Secondary: StoryObj<CheckboxProps> = {
   args: {

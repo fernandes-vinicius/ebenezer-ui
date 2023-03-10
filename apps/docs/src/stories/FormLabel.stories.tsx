@@ -2,13 +2,13 @@ import type { Meta, StoryObj } from '@storybook/react'
 import {
   FormLabel,
   FormLabelProps,
-  Flex,
   TextInput,
   FormControl,
+  Box,
 } from '@ebenezer-ui/react'
 
 export default {
-  title: 'Forms/FormLabel',
+  title: 'Form/FormLabel',
   component: FormLabel,
   parameters: {
     docs: {
@@ -24,12 +24,12 @@ export default {
   },
   decorators: [
     (Story) => (
-      <Flex as="form" direction="column">
+      <Box as="form">
         <FormControl>
           {Story()}
           <TextInput id="email" type="email" placeholder="Email address" />
         </FormControl>
-      </Flex>
+      </Box>
     ),
   ],
 } as Meta<FormLabelProps>

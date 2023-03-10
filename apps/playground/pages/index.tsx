@@ -2,9 +2,9 @@ import { Container, Flex, Heading, Text } from '@ebenezer-ui/react'
 
 export default function Home() {
   return (
-    <Container size="sm">
+    <Container>
       <Flex
-        css={{ height: '100vh', textAlign: 'center' }}
+        css={{ height: '$h-screen', textAlign: 'center' }}
         direction="column"
         justify="center"
         gap="9"
@@ -13,14 +13,14 @@ export default function Home() {
           👋 Hi, I&apos;m Ebenezer UI
         </Heading>
 
-        <Text css={{ color: '$gray500' }}>
+        <Text css={{ color: '$gray-500' }}>
           Ever find yourself wasting hours of your time creating and tweaking UI
           components in your React project? Ever felt frustrated with having to
           deal with compatibility issues and design issues across different
           browsers?
         </Text>
 
-        <Text css={{ color: '$gray500' }}>
+        <Text css={{ color: '$gray-500' }}>
           Ebenezer UI is a library of React components built with Stitches that
           solves all these problems for you. 🎉
         </Text>
