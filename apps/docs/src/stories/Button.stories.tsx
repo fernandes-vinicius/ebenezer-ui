@@ -67,24 +67,28 @@ export const Secondary: StoryObj<ButtonProps> = {
 export const Outline: StoryObj<ButtonProps> = {
   args: {
     variant: 'outline',
+    children: 'Outline',
   },
 }
 
 export const Ghost: StoryObj<ButtonProps> = {
   args: {
     variant: 'ghost',
+    children: 'Ghost',
   },
 }
 
 export const Text: StoryObj<ButtonProps> = {
   args: {
     variant: 'text',
+    children: 'Text',
   },
 }
 
 export const Link: StoryObj<ButtonProps> = {
   args: {
     variant: 'link',
+    children: 'Link',
   },
 }
 
@@ -103,6 +107,12 @@ export const Medium: StoryObj<ButtonProps> = {
 export const Large: StoryObj<ButtonProps> = {
   args: {
     size: 'lg',
+  },
+}
+
+export const FullWidth: StoryObj<ButtonProps> = {
+  args: {
+    fullWidth: true,
   },
 }
 

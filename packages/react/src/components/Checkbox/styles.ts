@@ -7,7 +7,7 @@ export const CheckboxContainer = styled(Checkbox.Root, {
 
   width: '$6',
   height: '$6',
-  backgroundColor: 'transparent',
+  backgroundColor: '$transparent',
   borderRadius: '$md',
   lineHeight: '$none',
   cursor: 'pointer',

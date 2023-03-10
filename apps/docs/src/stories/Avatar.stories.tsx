@@ -15,6 +15,7 @@ export default {
   args: {
     src: 'https://github.com/fernandes-vinicius.png',
     alt: 'Vinícius Fernandes',
+    variant: 'circular',
     size: 'md',
     children: 'VF',
   },
@@ -22,6 +23,12 @@ export default {
     src: {
       control: {
         type: 'text',
+      },
+    },
+    variant: {
+      options: ['square', 'rounded', 'circular'],
+      control: {
+        type: 'inline-radio',
       },
     },
     size: {
@@ -34,6 +41,23 @@ export default {
 } as Meta<AvatarProps>
 
 export const Default: StoryObj<AvatarProps> = {}
+
+export const Square: StoryObj<AvatarProps> = {
+  args: {
+    variant: 'square',
+  },
+}
+export const Rounded: StoryObj<AvatarProps> = {
+  args: {
+    variant: 'rounded',
+  },
+}
+
+export const Circular: StoryObj<AvatarProps> = {
+  args: {
+    variant: 'circular',
+  },
+}
 
 export const WithFallback: StoryObj<AvatarProps> = {
   args: {

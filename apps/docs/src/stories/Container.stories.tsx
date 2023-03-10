@@ -24,7 +24,7 @@ export default {
   },
   argTypes: {
     size: {
-      options: ['sm', 'md', 'lg', '2xl'],
+      options: ['sm', 'md', 'lg', 'xl', '2xl'],
       control: {
         type: 'inline-radio',
       },

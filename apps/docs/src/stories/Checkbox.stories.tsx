@@ -49,6 +49,7 @@ export const Default: StoryObj<CheckboxProps> = {}
 export const Secondary: StoryObj<CheckboxProps> = {
   args: {
     variant: 'secondary',
+    defaultChecked: true,
   },
 }
 

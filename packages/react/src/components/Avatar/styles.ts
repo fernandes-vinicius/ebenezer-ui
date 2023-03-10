@@ -7,10 +7,20 @@ export const AvatarContainer = styled(Avatar.Root, {
   backgroundColor: '$gray-900',
 
   display: 'inline-block',
-  borderRadius: '$full',
   overflow: 'hidden',
 
   variants: {
+    variant: {
+      square: {
+        borderRadius: '$none',
+      },
+      rounded: {
+        borderRadius: '$lg',
+      },
+      circular: {
+        borderRadius: '$full',
+      },
+    },
     size: {
       sm: {
         width: '$8',
@@ -28,6 +38,7 @@ export const AvatarContainer = styled(Avatar.Root, {
   },
 
   defaultVariants: {
+    variant: 'circular',
     size: 'md',
   },
 })

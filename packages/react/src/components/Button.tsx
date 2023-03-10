@@ -75,6 +75,11 @@ export const Button = styled('button', {
         },
       },
     },
+    fullWidth: {
+      true: {
+        width: '$full',
+      },
+    },
   },
 
   compoundVariants: [
@@ -200,6 +205,7 @@ export const Button = styled('button', {
     color: 'primary',
     variant: 'solid',
     size: 'md',
+    fullWidth: false,
   },
 })
 
