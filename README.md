@@ -50,6 +50,6 @@ npm run dev
 
 <br />
 
-[Docs - Official Documentation](http://localhost:6006)
+[Docs - Local Documentation](http://localhost:6006)
 
 [Playground - Next application to test the design system in practice](http://localhost:3000)
