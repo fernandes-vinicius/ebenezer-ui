@@ -1,0 +1,2 @@
+import{o as t,j as o,b as e}from"./index-69de1ac1.js";import"./index-d3e1ce29.js";import"./iframe-6a5918a4.js";import"./index-be0e8dfd.js";const s={title:"Overlay/Tooltip",component:t,args:{text:"I'm a tooltip",children:o(e,{children:"Hover me"})},argTypes:{children:{control:{type:null}}}},a={},n=["Default"];export{a as Default,n as __namedExportsOrder,s as default};
+//# sourceMappingURL=Tooltip.stories-244bc095.js.map
